@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    tools:context=".MainActivity">
+    <!-- 属性查询 -->
+
+    <!--    <RelativeLayout-->
+    <!--        android:id="@+id/tb_search"-->
+    <!--        android:layout_width="0dp"-->
+    <!--        android:layout_height="45dp"-->
+    <!--        android:layout_margin="6dp"-->
+    <!--        android:layout_marginStart="22dp"-->
+    <!--        android:layout_marginEnd="22dp"-->
+    <!--        android:background="@drawable/toolbar_selector"-->
+    <!--        android:paddingLeft="6dp"-->
+    <!--        android:paddingTop="6dp"-->
+    <!--        android:paddingRight="6dp"-->
+    <!--        android:paddingBottom="2dp"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintStart_toStartOf="parent">-->
+    <!--&lt;!&ndash;        app:layout_constraintTop_toTopOf="@+id/relativeLayout">&ndash;&gt;-->
+
+
+    <!--&lt;!&ndash;        <TextView&ndash;&gt;-->
+    <!--&lt;!&ndash;            android:id="@+id/txt_selectContinent"&ndash;&gt;-->
+    <!--&lt;!&ndash;            android:layout_width="wrap_content"&ndash;&gt;-->
+    <!--&lt;!&ndash;            android:layout_height="40dip"&ndash;&gt;-->
+    <!--&lt;!&ndash;            android:layout_alignParentLeft="true"&ndash;&gt;-->
+    <!--&lt;!&ndash;            android:gravity="center"&ndash;&gt;-->
+    <!--&lt;!&ndash;            android:text="查询条件"&ndash;&gt;-->
+    <!--&lt;!&ndash;            android:textColor="#FF000000" />&ndash;&gt;-->
+
+    <!--&lt;!&ndash;        <ImageButton&ndash;&gt;-->
+    <!--&lt;!&ndash;            android:id="@+id/btn_selectGeo"&ndash;&gt;-->
+    <!--&lt;!&ndash;            android:layout_width="40dp"&ndash;&gt;-->
+    <!--&lt;!&ndash;            android:layout_height="40dp"&ndash;&gt;-->
+    <!--&lt;!&ndash;            android:layout_alignParentRight="true"&ndash;&gt;-->
+    <!--&lt;!&ndash;            android:src="@drawable/select" />&ndash;&gt;-->
+
+    <!--&lt;!&ndash;        <androidx.appcompat.widget.AppCompatImageView&ndash;&gt;-->
+    <!--&lt;!&ndash;            android:id="@+id/hintMenu"&ndash;&gt;-->
+    <!--&lt;!&ndash;            android:layout_width="35dp"&ndash;&gt;-->
+    <!--&lt;!&ndash;            android:layout_height="35dp"&ndash;&gt;-->
+    <!--&lt;!&ndash;            android:layout_alignParentRight="true"&ndash;&gt;-->
+    <!--&lt;!&ndash;            android:onClick="onProfile"&ndash;&gt;-->
+    <!--&lt;!&ndash;            android:src="@drawable/select"&ndash;&gt;-->
+    <!--&lt;!&ndash;            android:tint="@android:color/black" />&ndash;&gt;-->
+
+
+    <!--&lt;!&ndash;        <Button&ndash;&gt;-->
+    <!--&lt;!&ndash;            android:id="@+id/btn_search"&ndash;&gt;-->
+    <!--&lt;!&ndash;            android:layout_width="70dp"&ndash;&gt;-->
+    <!--&lt;!&ndash;            android:layout_height="40dp"&ndash;&gt;-->
+    <!--&lt;!&ndash;            android:layout_toLeftOf="@+id/hintMenu"&ndash;&gt;-->
+    <!--&lt;!&ndash;            android:text="查询" />&ndash;&gt;-->
+
+    <!--&lt;!&ndash;        <Spinner&ndash;&gt;-->
+    <!--&lt;!&ndash;            android:id="@+id/spn_select_continent"&ndash;&gt;-->
+    <!--&lt;!&ndash;            android:layout_width="match_parent"&ndash;&gt;-->
+    <!--&lt;!&ndash;            android:layout_height="40dp"&ndash;&gt;-->
+    <!--&lt;!&ndash;            android:layout_toLeftOf="@+id/btn_search"&ndash;&gt;-->
+    <!--&lt;!&ndash;            android:layout_toRightOf="@+id/txt_selectContinent" />&ndash;&gt;-->
+    <!--    </RelativeLayout>-->
+
+    <LinearLayout
+        android:id="@+id/searchbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:background="#f5f5f5"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="4dp">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/hintMenu"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentRight="true"
+            android:onClick="onProfile"
+            android:src="@drawable/caidan"
+            android:tint="@android:color/darker_gray" />
+
+        <EditText
+            android:id="@+id/search_title"
+            style="@style/edittext_singleline"
+            android:layout_width="0dp"
+            android:layout_marginRight="4dp"
+            android:layout_marginBottom="0dp"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/btn_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:background="@color/btn_blue_unpress"
+            android:minHeight="40dp"
+            android:padding="5dp"
+            android:text="搜索"
+            android:textColor="@color/text_white" />
+    </LinearLayout>
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/line"
+        app:layout_constraintBottom_toTopOf="@+id/expandtab_view"
+        app:layout_constraintTop_toBottomOf="@+id/searchbar"
+        tools:layout_editor_absoluteX="5dp"
+        tools:layout_editor_absoluteY="5dp" />
+
+    <com.example.supermap_demo.expandtabview.SearchTabView
+        android:id="@+id/expandtab_view"
+        app:layout_constraintTop_toBottomOf="@+id/searchbar"
+
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+
+        />
+
+<!--    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--        android:id="@+id/srl"-->
+<!--        android:layout_width="fill_parent"-->
+<!--        android:layout_height="52dp"-->
+<!--        android:background="#ffffff"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/searchbar">-->
+
+<!--        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--            xmlns:tools="http://schemas.android.com/tools"-->
+<!--            android:id="@+id/swipe_refresh_widget"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="52dp">-->
+
+<!--            <androidx.recyclerview.widget.RecyclerView-->
+<!--                android:id="@android:id/list"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:cacheColorHint="@null"-->
+<!--                android:scrollbars="vertical" />-->
+
+<!--        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>-->
+<!--    </RelativeLayout>-->
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/expandtab_view">
+
+        <com.supermap.mapping.MapView
+            android:id="@+id/mapview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </com.supermap.mapping.MapView>
+
+
+        <ZoomControls
+            android:id="@+id/zoomControls1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true" />
+        <!--        <LinearLayout-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_alignParentRight="true"-->
+        <!--            android:layout_alignParentBottom="true"-->
+        <!--            android:orientation="horizontal">-->
+
+        <!--            <Button-->
+        <!--                android:id="@+id/btn_viewentire"-->
+        <!--                android:layout_width="wrap_content"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:text="全屏显示"></Button>-->
+
+        <!--            <Button-->
+        <!--                android:id="@+id/btn_zoomout"-->
+        <!--                android:layout_width="wrap_content"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:text="放大"></Button>-->
+
+        <!--            <Button-->
+        <!--                android:id="@+id/btn_zoomin"-->
+        <!--                android:layout_width="wrap_content"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:text="缩小"></Button>-->
+
+        <!--            <Button-->
+        <!--                android:id="@+id/btn_measure"-->
+        <!--                android:layout_width="wrap_content"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:text="距离"></Button>-->
+
+
+        <!--        </LinearLayout>-->
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

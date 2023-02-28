@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/AndroidProjects/Supermapdemo/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1545" />
+        <entry key="..\:/AndroidProjects/Supermapdemo/app/src/main/res/drawable-v24/poi_background.xml" value="0.1" />
+        <entry key="..\:/AndroidProjects/Supermapdemo/app/src/main/res/drawable-v24/toolbar_selector.xml" value="0.1" />
+        <entry key="..\:/AndroidProjects/Supermapdemo/app/src/main/res/drawable/bg_edit.xml" value="0.1295" />
+        <entry key="..\:/AndroidProjects/Supermapdemo/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1545" />
+        <entry key="..\:/AndroidProjects/Supermapdemo/app/src/main/res/layout/activity_main.xml" value="0.22" />
+        <entry key="..\:/AndroidProjects/Supermapdemo/app/src/main/res/layout/btn_taggle_search.xml" value="0.16614583333333333" />
+        <entry key="..\:/AndroidProjects/Supermapdemo/app/src/main/res/layout/callout.xml" value="0.15416666666666667" />
+        <entry key="..\:/AndroidProjects/Supermapdemo/app/src/main/res/layout/detailinfo.xml" value="0.15416666666666667" />
+        <entry key="..\:/AndroidProjects/Supermapdemo/app/src/main/res/layout/item_name_card.xml" value="0.16614583333333333" />
+        <entry key="..\:/AndroidProjects/Supermapdemo/app/src/main/res/layout/item_staggered.xml" value="0.16614583333333333" />
+        <entry key="..\:/AndroidProjects/Supermapdemo/app/src/main/res/layout/item_title_header.xml" value="0.18020833333333333" />
+        <entry key="..\:/AndroidProjects/Supermapdemo/app/src/main/res/layout/item_title_menu.xml" value="0.16614583333333333" />
+        <entry key="..\:/AndroidProjects/Supermapdemo/app/src/main/res/layout/layout_custom_dialog_footer.xml" value="0.16614583333333333" />
+        <entry key="..\:/AndroidProjects/Supermapdemo/app/src/main/res/layout/layout_custom_dialog_header.xml" value="0.15806159420289856" />
+        <entry key="..\:/AndroidProjects/Supermapdemo/app/src/main/res/layout/layout_dialog_footer.xml" value="0.15806159420289856" />
+        <entry key="..\:/AndroidProjects/Supermapdemo/app/src/main/res/layout/layout_dialog_header.xml" value="0.16614583333333333" />
+        <entry key="..\:/AndroidProjects/Supermapdemo/app/src/main/res/layout/layout_poi.xml" value="0.6666666666666666" />
+        <entry key="..\:/AndroidProjects/Supermapdemo/app/src/main/res/layout/line.xml" value="0.16614583333333333" />
+        <entry key="..\:/AndroidProjects/Supermapdemo/app/src/main/res/layout/part_toolbar.xml" value="0.3115942028985507" />
+        <entry key="..\:/AndroidProjects/Supermapdemo/app/src/main/res/layout/search_choose_item.xml" value="0.29891304347826086" />
+        <entry key="..\:/AndroidProjects/Supermapdemo/app/src/main/res/layout/search_double_item.xml" value="0.29891304347826086" />
+        <entry key="..\:/AndroidProjects/Supermapdemo/app/src/main/res/layout/search_single_item.xml" value="0.1" />
+        <entry key="..\:/AndroidProjects/Supermapdemo/app/src/main/res/layout/search_try.xml" value="0.3179347826086957" />
+        <entry key="..\:/AndroidProjects/Supermapdemo/app/src/main/res/xml/network_security_config.xml" value="0.1" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

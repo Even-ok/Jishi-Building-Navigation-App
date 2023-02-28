@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content"
+  android:orientation="horizontal">
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content">
+
+      <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/item_name_card_profile"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_margin="10dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/face3"
+        app:shapeAppearanceOverlay="@style/CircleImageStyle" />
+
+      <TextView
+        android:id="@+id/item_name_card_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/item_name_card_profile"
+        android:fontFamily="sans-serif"
+        android:text="Sophie"
+        android:textColor="@color/md_grey_800"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+    </RelativeLayout>
+
+    <TextView
+      android:id="@+id/item_name_card_board"
+      android:layout_width="wrap_content"
+      android:layout_height="80dp"
+      android:layout_marginLeft="10dp"
+      android:layout_marginRight="10dp"
+      android:layout_marginBottom="10dp"
+      android:ellipsize="end"
+      android:fontFamily="sans-serif"
+      android:maxLines="4"
+      android:textColor="@color/md_grey_600"
+      android:textSize="15sp"
+      tools:text="@string/board3" />
+  </LinearLayout>
+</LinearLayout>
